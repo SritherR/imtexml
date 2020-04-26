@@ -8,7 +8,7 @@ from .forms import *
   
 # Create your views here. 
 def hotel_image_view(request): 
-    imurl="C:/Users/A1029500/imgupload/media/images/sample.jpg"
+    
   
     if request.method == 'POST': 
         form = HotelForm(request.POST, request.FILES) 
@@ -23,7 +23,7 @@ def hotel_image_view(request):
         
         context={'form' : form}
 
-    return render(request, 'im.html', {'form' : form,'imurl':imurl}) 
+    return render(request, 'im.html', {'form' : form}) 
   
   
 def success(request): 
