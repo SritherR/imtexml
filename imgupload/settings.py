@@ -25,7 +25,7 @@ SECRET_KEY = 'zs0jwte2b-#!g5w-*w^6inytt1o_0+g=h9^e*p((z72qhdq1$f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['imtexml.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
