@@ -2,7 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect 
 import pytesseract
 from PIL import Image
-import cv2
 import numpy as np
 from .forms import *
   
