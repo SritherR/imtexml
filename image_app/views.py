@@ -44,7 +44,6 @@ def success(request):
         context={'Hotels':Hotels,'result':result}
     return render(request,'vi.html',context)
 
-
    
 # =============================================================================
 #     
