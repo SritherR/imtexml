@@ -1,6 +1,7 @@
 from django.http import HttpResponse 
 from django.shortcuts import render, redirect 
 import pytesseract
+import os
 from PIL import Image
 
 import numpy as np
