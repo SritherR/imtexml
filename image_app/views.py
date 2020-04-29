@@ -22,7 +22,7 @@ def hotel_image_view(request):
     else: 
         form = HotelForm() 
         
-        context={'form' : form}
+        context={'form' : form} 
 
     return render(request, 'im.html', {'form' : form}) 
   
