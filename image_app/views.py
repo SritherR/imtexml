@@ -32,7 +32,7 @@ def success(request):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     src_path=os.path.join(BASE_DIR)
     #tes_path=src_path+r'/tesseract.exe'
-    #pytesseract.pytesseract.tesseract_cmd = tes_path
+    pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
     #rint(Hotels.values())
     Hotels=Hotels[len(Hotels)-1]
     
