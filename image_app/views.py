@@ -31,7 +31,7 @@ def success(request):
     Hotels=Hotel.objects.all()
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     src_path=os.path.join(BASE_DIR)
-    tes_path=src_path+r'/tesseract/Tesseract-OCR/tesseract.exe'
+    tes_path=src_path+r'/imgupload/tesseract/Tesseract-OCR/tesseract.exe'
     pytesseract.pytesseract.tesseract_cmd = tes_path
     #rint(Hotels.values())
     Hotels=Hotels[len(Hotels)-1]
