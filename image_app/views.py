@@ -43,7 +43,7 @@ def success(request):
         print(Hotels.Image.url)
         path=Hotels.Image.url
         print(src_path+path)
-        result=pytesseract.image_to_string(Image.open(src_path+path,lang='eng', config=tessdata_dir_config))
+        result=pytesseract.image_to_string(Image.open(src_path+path,lang='eng'))
         print("result",result)
         context={'Hotels':Hotels,'result':result}
     return render(request,'vi.html',context)
